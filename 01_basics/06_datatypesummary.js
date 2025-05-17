@@ -27,3 +27,27 @@ const myFunction = function(){
 
 console.log(typeof myFunction);
 
+//------------------------ Memory ------------------------
+
+// Stack (Primitive) , Heap (Non-Primitive)
+
+let myName = "vinay"
+let name2 = myName          // create copy
+console.log(name2);
+name2 = "vishal"
+console.log(name2);
+console.log(myName);
+
+
+let user1 = {
+    email: "vinay123@gmail.com",
+    upi: "abc2ybl"
+}
+
+let user2 = user1       // giving references
+
+user2.email = "vicky123@gmail.com"
+
+console.log(user1.email);
+console.log(user2.email);
+
