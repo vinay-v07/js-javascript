@@ -9,4 +9,9 @@ accountEmail = "vicky123@gmail.com"
 accountPwd = "54321"
 accountCity ="Raipur"
 
+/*
+Prefer not to use 'var' 
+because of issue in block scope and functional scope
+*/
+
 console.table([accountId,accountEmail,accountPwd,accountCity])
