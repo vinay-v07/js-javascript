@@ -64,3 +64,29 @@ console.log(Object.values(obj));      // return array of values of an object.
 console.log(Object.entries(obj));   // return array of pair [kays, values] of an object.   
 
 console.log(obj.hasOwnProperty('isLoggedIn'))
+
+
+const course = {
+    coursename: "js",
+    price: "999",
+    courseInstructor: "vinay"
+}
+
+// console.log(course.courseInstructor);
+const {courseInstructor: Instructor} = course
+console.log(Instructor);
+
+
+//          JSON
+// {
+//     coursename: "js",
+//     price: "free",
+//     courseInstructor: "vinay"
+// }
+
+//    Array of Object
+// [
+//     {},
+//     {},
+//     {}
+// ]
