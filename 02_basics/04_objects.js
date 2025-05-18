@@ -84,7 +84,7 @@ console.log(Instructor);
 //     courseInstructor: "vinay"
 // }
 
-//    Array of Object
+//     Array of Object
 // [
 //     {},
 //     {},
