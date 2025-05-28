@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>vinay kumar verma</h1>
+    <button id ="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("vinay")
+    // },5000)
+
+    const sayVinay = function(){
+        console.log("vinay verma")
+    }
+    setTimeout(sayVinay,5000)
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "vinay verma"
+    }
+    const changes = setTimeout(changeText,6000)
+
+    // clearTimeout(changes)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changes)
+        console.log("Stopped.")
+    })
+</script>
+</html>

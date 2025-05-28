@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>vinay kumar verma</h1>
+    <button id ="start">Start</button>
+    <button id ="stop">Stop</button>
+</body>
+<script>
+    let a;
+    const startSayVinay = function (){
+        a = setInterval(sayVinay,1000);
+
+        function sayVinay(){
+            console.log("vinay")
+        }
+    }
+    
+    // const sayVinay = function (str){
+    //     console.log( str, Date.now())
+    // }
+    
+    // setInterval(sayVinay,1000,"vinay")
+
+    // clearInterval(a)
+
+    document.querySelector('#start').addEventListener('click',startSayVinay);
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(a);
+        a = null;
+    })
+</script>
+</html>
