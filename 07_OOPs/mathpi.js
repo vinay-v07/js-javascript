@@ -4,9 +4,9 @@
 // Math.PI = 5
 // console.log(Math.PI)             // 3.141592653589793
 
-const descripter = Object.getOwnPropertyDescriptor(Math, "PI")
+const descriptor = Object.getOwnPropertyDescriptor(Math, "PI")
 
-// console.log(descripter);
+// console.log(descriptor);
 // {
 //   value: 3.141592653589793,
 //   writable: false,
